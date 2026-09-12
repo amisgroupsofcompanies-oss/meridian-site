@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridian — Shop</title>
+<link rel="canonical" href="https://mystore.com/shop.html">
+<meta property="og:title" content="Meridian — Shop">
+<meta property="og:url" content="https://mystore.com/shop.html">
+<meta property="og:type" content="website">
+<meta name="description" content="Small-batch essentials cut from natural fibres and made to be worn for years.">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0}
+:root{--c-bg:#ffffff;--c-surface:#f5f5f4;--c-text:#18181b;--c-muted:#6b7280;--c-accent:#111827;--c-accent-2:#4b5563;--c-border:#e5e7eb;--c-on-accent:#ffffff;--radius:0px;--font-head:'Consolas', 'Courier New', monospace;--font-body:'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;--head-spacing:-0.01em;--maxw:1100px}
+
+body *{box-sizing:border-box}
+body {font-family:var(--font-body);color:var(--c-text);background:var(--c-bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+body img{max-width:100%;display:block}
+body h1,body h2,body h3,body h4{font-family:var(--font-head);letter-spacing:var(--head-spacing);line-height:1.12;margin:0;font-weight:700}
+body h1{font-size:clamp(2rem,1.1rem + 2.6vw,3.25rem)}
+body h2{font-size:clamp(1.6rem,1rem + 1.6vw,2.4rem)}
+body h3{font-size:1.18rem}
+body p{margin:0}
+body a{color:inherit;text-decoration:none}
+body .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+body section{padding:clamp(48px,5.5vw,104px) 0;position:relative}
+body .eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--c-accent)}
+body .lead{font-size:1.06rem;color:var(--c-muted);max-width:62ch}
+body .muted{color:var(--c-muted)}
+body .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:calc(var(--radius) - 4px);background:var(--c-accent);color:var(--c-on-accent);font-weight:650;font-size:.94rem;border:1px solid transparent;cursor:pointer;font-family:var(--font-body)}
+body .btn.ghost{background:transparent;color:var(--c-text);border-color:var(--c-border)}
+body .btn.soft{background:color-mix(in oklab,var(--c-accent) 14%,transparent);color:var(--c-accent);border-color:color-mix(in oklab,var(--c-accent) 26%,transparent)}
+body .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+body .card{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius);padding:26px}
+body .grid{display:grid;gap:22px}
+body .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+body .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+body .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+body .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,64px);align-items:center}
+body .sec-head{max-width:64ch;margin-bottom:38px;display:flex;flex-direction:column;gap:12px}
+body .sec-head.center{margin-left:auto;margin-right:auto;text-align:center;align-items:center}
+body .alt{background:var(--c-surface)}
+body .art{border-radius:var(--radius);min-height:280px;background:
+   radial-gradient(120% 90% at 12% 8%, color-mix(in oklab,var(--c-accent) 62%,transparent), transparent 60%),
+   radial-gradient(100% 80% at 92% 92%, color-mix(in oklab,var(--c-accent-2) 66%,transparent), transparent 62%),
+   linear-gradient(150deg, color-mix(in oklab,var(--c-text) 88%,transparent), color-mix(in oklab,var(--c-accent) 40%,transparent));
+   position:relative;overflow:hidden}
+body .art.pattern:after{content:'';position:absolute;inset:0;opacity:.3;background-image:linear-gradient(color-mix(in oklab,#fff 55%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in oklab,#fff 55%,transparent) 1px,transparent 1px);background-size:34px 34px;mask-image:radial-gradient(80% 80% at 50% 40%,#000,transparent)}
+body .art.photo{background-size:cover;background-position:center}
+body .ratio-1{aspect-ratio:1/1;min-height:0}
+body .ratio-43{aspect-ratio:4/3;min-height:0}
+body .ratio-169{aspect-ratio:16/9;min-height:0}
+body .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px solid var(--c-border);background:var(--c-surface);font-size:.8rem;font-weight:600}
+body .price{font-family:var(--font-head);font-weight:700}
+body .strike{text-decoration:line-through;color:var(--c-muted);font-weight:500;margin-left:8px;font-size:.9em}
+body .rowline{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0;border-bottom:1px solid var(--c-border)}
+body .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:color-mix(in oklab,var(--c-accent) 16%,transparent);color:var(--c-accent);font-weight:800;font-family:var(--font-head)}
+body .stat-n{font-family:var(--font-head);font-size:clamp(1.9rem,1rem + 2vw,2.9rem);font-weight:700;color:var(--c-accent)}
+body .field{width:100%;padding:13px 15px;border-radius:calc(var(--radius) - 6px);border:1px solid var(--c-border);background:var(--c-bg);color:var(--c-text);font:inherit;font-size:.94rem}
+body .stars{color:var(--c-accent);letter-spacing:2px;font-size:.9rem}
+body .tag{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--c-accent);color:var(--c-on-accent)}
+body .center{text-align:center}
+body .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0}
+body .nav-links{display:flex;gap:26px;font-size:.94rem;font-weight:550;flex-wrap:wrap}
+body .brand{font-family:var(--font-head);font-weight:800;font-size:1.12rem;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+body .brand-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--c-accent),var(--c-accent-2));display:inline-block;flex:none}
+body .hero-wrap{padding:clamp(56px,7vw,124px) 0}
+body .hero-center{text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+body .hero-center .lead{margin:0 auto}
+body .hero-center .btns{justify-content:center}
+body .dark-band{background:var(--c-text);color:var(--c-bg)}
+body .dark-band .lead,body .dark-band .muted{color:color-mix(in oklab,var(--c-bg) 72%,transparent)}
+body .dark-band .card{background:color-mix(in oklab,var(--c-bg) 10%,transparent);border-color:color-mix(in oklab,var(--c-bg) 18%,transparent)}
+body .foot{padding:56px 0 34px}
+body .foot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px}
+body .foot-col{display:flex;flex-direction:column;gap:10px;font-size:.92rem}
+body .foot-bottom{margin-top:36px;padding-top:20px;border-top:1px solid var(--c-border);display:flex;justify-content:space-between;gap:16px;font-size:.85rem;color:var(--c-muted);flex-wrap:wrap}
+body .logos{display:flex;flex-wrap:wrap;gap:34px;align-items:center;justify-content:center;opacity:.72;font-family:var(--font-head);font-weight:700;font-size:1.05rem}
+body .step-n{font-family:var(--font-head);font-size:.8rem;font-weight:800;letter-spacing:.1em;color:var(--c-accent)}
+body .qa{padding:20px 0;border-top:1px solid var(--c-border)}
+body .qa h3{margin-bottom:8px}
+body .tbl{width:100%;border-collapse:collapse;font-size:.94rem}
+body .tbl td,body .tbl th{text-align:left;padding:13px 12px;border-bottom:1px solid var(--c-border)}
+body .mini{font-size:.82rem;color:var(--c-muted)}
+body .overlay-card{position:absolute;left:22px;bottom:22px;right:22px;background:var(--c-surface);border-radius:calc(var(--radius) - 2px);padding:16px 18px;border:1px solid var(--c-border)}
+body .sticky-note{border-left:3px solid var(--c-accent);padding-left:18px}
+@media (max-width:1000px){
+body .g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+body .g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+body .foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:700px){
+body .g2,body .g3,body .g4,body .foot-grid{grid-template-columns:minmax(0,1fr)}
+body .split{grid-template-columns:minmax(0,1fr)}
+body .nav-links{display:none}
+body h1{font-size:1.85rem}
+body h2{font-size:1.45rem}
+body section{padding:44px 0}
+body .wrap{padding:0 18px}
+}
+</style>
+</head>
+<body>
+<div class="sw-sec " style="padding:0;border-bottom:1px solid var(--c-border)"><div class="wrap"><div class="nav"><div class="brand"><span class="brand-mark"></span><span>Meridian</span></div><div class="nav-links"><a href="index.html" class="">Home</a><a href="shop.html" class="">Shop</a><a href="product.html" class="">Product</a><a href="cart.html" class="">Cart</a><a href="contact.html" class="">Contact</a></div><a href="#" class="btn ">Shop now</a></div></div></div>
+<section class="sw-sec alt hero-wrap"><div class="wrap"><div class="hero-center"><div><div class="eyebrow">All products</div><h1>The full collection</h1><p class="lead" style="margin-top:18px">Everything in stock, updated hourly.</p><div class="btns"></div></div></div></div></section>
+<section class="sw-sec"><div class="wrap"><div class="sec-head"><div class="eyebrow">Catalogue</div><h2>All products</h2></div><div class="grid g4"><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div><span class="tag" style="position:absolute;top:12px;left:12px">Sale</span></div><div style="padding:18px"><h3>Oversized linen shirt</h3><div style="margin-top:6px"><span class="price">$68</span><span class="strike">$85</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div><span class="tag" style="position:absolute;top:12px;left:12px">New</span></div><div style="padding:18px"><h3>Merino crew knit</h3><div style="margin-top:6px"><span class="price">$120</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div></div><div style="padding:18px"><h3>Wide-leg trouser</h3><div style="margin-top:6px"><span class="price">$96</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div><span class="tag" style="position:absolute;top:12px;left:12px">-15%</span></div><div style="padding:18px"><h3>Cotton twill jacket</h3><div style="margin-top:6px"><span class="price">$185</span><span class="strike">$220</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div></div><div style="padding:18px"><h3>Silk scarf</h3><div style="margin-top:6px"><span class="price">$42</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div></div><div style="padding:18px"><h3>Leather belt</h3><div style="margin-top:6px"><span class="price">$58</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div></div><div style="padding:18px"><h3>Ribbed tank</h3><div style="margin-top:6px"><span class="price">$28</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div><div class="card" style="padding:0;overflow:hidden"><div style="position:relative"><div class="art pattern ratio-1"></div><span class="tag" style="position:absolute;top:12px;left:12px">New</span></div><div style="padding:18px"><h3>Pleated midi skirt</h3><div style="margin-top:6px"><span class="price">$92</span></div><div class="btns" style="margin-top:14px"><a href="#" class="btn soft">Add to cart</a></div></div></div></div></div></section>
+<section class="sw-sec alt"><div class="wrap"><div class="sec-head"><div class="eyebrow">FAQ</div><h2>Questions people ask</h2></div><div style="max-width:78ch"><div class="qa"><h3>How do I find my size?</h3><p class="muted">Every product page has real garment measurements plus the height of the model.</p></div><div class="qa"><h3>Do you ship worldwide?</h3><p class="muted">Yes, to 42 countries. Duties are shown before you pay.</p></div><div class="qa"><h3>Can I return a sale item?</h3><p class="muted">Yes, sale items follow the same 30-day policy.</p></div></div></div></section>
+<footer class="sw-sec foot alt"><div class="wrap"><div class="foot-grid"><div class="foot-col"><div class="brand"><span class="brand-mark"></span><span>Meridian</span></div><p class="muted">Small-batch essentials cut from natural fibres and made to be worn for years.</p></div><div class="foot-col"><strong>Shop</strong><div class="foot-col"><span class="muted">New in</span><span class="muted">Best sellers</span><span class="muted">Sale</span><span class="muted">Gift cards</span></div></div><div class="foot-col"><strong>Company</strong><div class="foot-col"><span class="muted">About us</span><span class="muted">Our makers</span><span class="muted">Journal</span><span class="muted">Careers</span></div></div><div class="foot-col"><strong>Help</strong><div class="foot-col"><span class="muted">Shipping</span><span class="muted">Returns</span><span class="muted">Size guide</span><a href="contact.html" class="muted">Contact</a></div></div></div><div class="foot-bottom"><span>© 2026 Meridian. All rights reserved.</span><span>Made with Web Designer Studio</span></div></div></footer>
+</body>
+</html>
